@@ -2,11 +2,16 @@ import React from "react"
 import { useDispatch } from 'react-redux'
 import './style.css'
 import { addToCart}  from '../../actions'
+import { useSelector } from 'react-redux'
+
 
 
 const Item = (props) => {
     const dispatch = useDispatch()
-    console.log(props.productData.id)
+    console.log(props.productData)
+
+    const cart = useSelector(state => state.cart)
+    console.log(cart)
 
     const handleAddToCart = id => dispatch(addToCart(id))
     return(
