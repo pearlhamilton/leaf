@@ -5,3 +5,11 @@ ReactDOM.render(
   <h1>Hello React!</h1>,
   document.getElementById('root')
 )
+
+// STORE
+
+//ACTION for example increment, describes what you want to do 
+
+// REDUCER 
+
+//DISPATCH 
