@@ -3,7 +3,7 @@ import { Navbar, Item } from '../../components'
 import { useSelector } from 'react-redux'
 
 
-const Checkout = () => {
+const ProductPage = () => {
 
     const items = useSelector(state => state.products)
 
@@ -11,11 +11,11 @@ const Checkout = () => {
 
         <>
         <Navbar/>
-        <h2>Im the checkout page</h2>
+        <h2>Im the product page</h2>
 
         </>
 
     )
 }
 
-export default Checkout
+export default ProductPage
