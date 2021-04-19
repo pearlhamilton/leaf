@@ -1,0 +1,11 @@
+.shopItems{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+h1{
+    font-size: 6rem;
+    text-align: center;
+}

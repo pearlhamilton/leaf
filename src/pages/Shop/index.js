@@ -1,6 +1,7 @@
 import React from "react"
 import { Navbar, Item } from '../../components'
 import { useSelector } from 'react-redux'
+import './style.css'
 
 
 const Shop = () => {
@@ -11,8 +12,8 @@ const Shop = () => {
 
         <>
             <Navbar/>
-            <h1>Planty</h1>
-            <div>
+            <h1>Leaf.</h1>
+            <div className="shopItems">
                 {items.map(item => <Item key={item.id} productData ={item}/>
                 )}
             </div>
