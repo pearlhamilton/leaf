@@ -1,7 +1,25 @@
 const initState = {
-    products: [],
+    products: [ {
+        id: 1,
+        product: "Devil's Ivy",
+        description: "This is a great plant",
+        price: 15,
+        img: "https://img.freepik.com/free-photo/golden-pothos-devil-s-ivy-epipremnum-aureum-plant-wall_267395-404.jpg?size=338&ext=jpg"
+    },
+    {
+        id: 2,
+        product: "Calathea",
+        description: "This is a great plant",
+        price: 22,
+        img: "https://www.gardenersdream.co.uk/images/calathea-makoyana-peacock-or-cathedral-window-plant-p4751-37679_image.jpg"
+    }
+
+
+
+],
     cart: [],
     currentItem: null
+
 
 }
 
