@@ -1,10 +1,12 @@
 import React from "react"
+import { Shop } from './pages'
 
 
 const App = () => {
     return(
-
-        <h1>Hello Pearl</h1>
+        <>
+        <Shop />
+        </>
 
     )
 }

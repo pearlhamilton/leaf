@@ -15,7 +15,12 @@ const shoppingReducer = (state = initState, action) => {
             return{}
         case 'LOAD_ITEM':
             return{}
+
+        default:
+            return state
     
         
     }
 }
+
+export default shoppingReducer;
