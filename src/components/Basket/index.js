@@ -1,5 +1,9 @@
 import React, {useState, useEffect }from "react"
 import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
+
 
 import { useSelector } from 'react-redux'
 
@@ -17,14 +21,11 @@ const Basket = () => {
 
         setCount(num)
     }, [cart, count])
+
     return(
-
-
-
         <div id="Basket">
-            <h3>Basket</h3>
-            <img src="https://i.pinimg.com/originals/2b/35/a4/2b35a4763a31b6f5f40d9de9d7e05f88.jpg"></img>
-            <h2>Counter: {count}</h2>
+            <NavLink to ="/checkout" activeClassName="active">   <FontAwesomeIcon id="shoppingBasket"icon={faShoppingBasket}/></NavLink>
+            <h2 id="basketCount">{count}</h2>
         </div>
 
     )

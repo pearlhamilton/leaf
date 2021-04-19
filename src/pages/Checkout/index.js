@@ -6,8 +6,6 @@ import { useSelector } from 'react-redux'
 const Checkout = () => {
 
     const cart = useSelector(state => state.cart)
-    console.log(cart)
-
     const [totalQuantity, setQuantity] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
 
@@ -23,22 +21,20 @@ const Checkout = () => {
         setQuantity(quantity)
     }, [cart])
 
-
-
     return(
 
         <>
         <Navbar/>
-        <h2>Im the checkout page</h2>
-          <div>
-        {cart.map(item => <CartItem key={item.id} productData ={item}/>
-        )}
-        </div>
-        <div className = "summary">
-            <p>Total:</p>
-            <p>Price: {totalPrice}</p>
-            <p>Quantity: {totalQuantity}</p>
-        </div>
+            <h1>Checkout</h1>
+            <div className = "cartItems">
+                {cart.map(item => <CartItem key={item.id} productData ={item}/>
+                )}
+            </div>
+            <div className = "summary">
+                <p>Total:</p>
+                <p>Price: {totalPrice}</p>
+                <p>Quantity: {totalQuantity}</p>
+            </div>
 
         </>
 

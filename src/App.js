@@ -1,6 +1,7 @@
 import React from "react"
 import { Shop, Checkout, OneProductPage } from './pages'
 import { Switch, Route } from 'react-router-dom';
+import './style.css'
 
 
 const App = () => {

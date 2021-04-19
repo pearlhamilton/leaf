@@ -1,8 +1,15 @@
 #Basket{
     display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
 }
 
-#Basket img{
-    width: 50px;
+#shoppingBasket{
+    margin: 1rem;
+    font-size:30px;
+}
 
+#basketCount{
+    margin: 1rem;
 }

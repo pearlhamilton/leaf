@@ -10,17 +10,13 @@ const Shop = () => {
     return(
 
         <>
-        <Navbar/>
-        <h1>Planty</h1>
-        <div>
-        {items.map(item => <Item key={item.id} productData ={item}/>
-        )}
-        </div>
-
-        <h2>Im the shop front page</h2>
-
+            <Navbar/>
+            <h1>Planty</h1>
+            <div>
+                {items.map(item => <Item key={item.id} productData ={item}/>
+                )}
+            </div>
         </>
-
     )
 }
 
