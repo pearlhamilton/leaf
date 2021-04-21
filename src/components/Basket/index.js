@@ -24,7 +24,7 @@ const Basket = () => {
 
     return(
         <div id="Basket">
-            <NavLink to ="/checkout" activeClassName="active">   <FontAwesomeIcon id="shoppingBasket"icon={faShoppingBasket}/></NavLink>
+            <NavLink to ="/basket" activeClassName="active">   <FontAwesomeIcon id="shoppingBasket"icon={faShoppingBasket}/></NavLink>
             <h2 id="basketCount">{count}</h2>
         </div>
 

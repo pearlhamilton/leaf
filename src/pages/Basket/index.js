@@ -3,7 +3,7 @@ import { Navbar, CartItem } from '../../components'
 import { useSelector } from 'react-redux'
 
 
-const Checkout = () => {
+const Basket = () => {
 
     const cart = useSelector(state => state.cart)
     const [totalQuantity, setQuantity] = useState(0)
@@ -27,7 +27,7 @@ const Checkout = () => {
 
         <>
 
-            <h1>Checkout</h1>
+            <h1>Your Basket</h1>
             <div className = "cartItems">
                 {cart.map(item => <CartItem key={item.id} productData ={item}/>
                 )}
@@ -43,4 +43,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout
+export default Basket
