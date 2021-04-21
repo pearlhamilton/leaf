@@ -2,12 +2,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: thistle;
+
 }
 
 #shoppingBasket{
     margin: 1rem;
     font-size:30px;
+    color:black;
 }
 
 #basketCount{

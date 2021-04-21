@@ -1,5 +1,5 @@
 .item{
-    background-color:pink;
+    background-color:#97a97c;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -13,3 +13,27 @@
     height: 300px;
 }
 
+h4{
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+p{
+    font-size:1.5rem;
+}
+
+.button-container{
+    display: flex;
+    margin: 10px;
+}
+
+button{
+    margin:10px;
+    padding:5px;
+    font-size: 1rem;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.itemdetail{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.itemdetail h2{
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.itemdetail img{
+    margin: 10%;
+    border-radius: 10px;
+}
+
+.itemdetail p{
+    text-align: center;
+    margin: 10px;
+}

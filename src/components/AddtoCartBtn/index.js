@@ -8,11 +8,12 @@ import {addToCart} from '../../actions'
 const AddtoCartBtn = (props) => {
     const dispatch = useDispatch()
     const id = props.id
-    const handleAddToCart = id => dispatch(addToCart(id))
+    const handleAddToCart = id => {
+        dispatch(addToCart(id))}
 
     
     return(
-        <button onClick = {() => handleAddToCart({id})}>Add to Cart</button>)
+        <button onClick = {() => handleAddToCart(id)}>Add to Cart</button>)
 }
 
 

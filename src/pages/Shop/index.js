@@ -11,7 +11,6 @@ const Shop = () => {
     return(
 
         <>
-            <Navbar/>
             <h1>Leaf.</h1>
             <div className="shopItems">
                 {items.map(item => <Item key={item.id} productData ={item}/>

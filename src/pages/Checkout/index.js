@@ -9,6 +9,8 @@ const Checkout = () => {
     const [totalQuantity, setQuantity] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
 
+    console.log(cart)
+
     useEffect (() => {
         let quantity = 0
         let price = 0
@@ -24,7 +26,7 @@ const Checkout = () => {
     return(
 
         <>
-        <Navbar/>
+
             <h1>Checkout</h1>
             <div className = "cartItems">
                 {cart.map(item => <CartItem key={item.id} productData ={item}/>

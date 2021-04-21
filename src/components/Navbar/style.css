@@ -1,7 +1,7 @@
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: teal;
+    background-color:#97a97c;
     width:100%;
     align-items: center;
     
@@ -9,4 +9,6 @@
 
 nav{
     margin: 0px 30px;
+    font-size: 1.5rem;
 }
+
