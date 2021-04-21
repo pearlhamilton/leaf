@@ -7,7 +7,7 @@ import './style.css'
 
 const App = () => {
     return(
-        <div id="container">
+        <>
         <Navbar/>
          <Switch>
             <Route exact path="/" component={Shop} />
@@ -15,7 +15,7 @@ const App = () => {
             <Route path="/shop/:id" component={ProductPage}/>
             <Route render={() => <h1 id="notFound">Sorry...Not Found!</h1>} />
          </Switch>
-        </div>
+        </>
     )
 }
 
