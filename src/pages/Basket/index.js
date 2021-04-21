@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Navbar, CartItem } from '../../components'
 import { useSelector } from 'react-redux'
+import './style.css'
 
 
 const Basket = () => {
@@ -26,8 +27,11 @@ const Basket = () => {
     return(
 
         <>
-
+            <div id="basket-header">
             <h1>Your Basket</h1>
+            <h2>Continue Shopping</h2>
+            </div>
+            <p>{totalQuantity} Items</p>
             <div className = "cartItems">
                 {cart.map(item => <CartItem key={item.id} productData ={item}/>
                 )}
@@ -35,7 +39,7 @@ const Basket = () => {
             <div className = "summary">
                 <p>Total:</p>
                 <p>Price: {totalPrice}</p>
-                <p>Quantity: {totalQuantity}</p>
+               
             </div>
 
         </>
