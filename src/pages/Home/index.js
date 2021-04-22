@@ -1,6 +1,7 @@
 import React from "react"
-import { Navbar} from '../../components'
 import './style.css'
+import image from './plants.png'
+import {Link} from 'react-router-dom'
 
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
 
         <>
             <h1>Leaf.</h1>
-            <h3>Shop our plants</h3>
+            <Link to ="/products"><h3>Shop our plants</h3> </Link>
+            <img src={image}></img>
         </>
     )
 }
