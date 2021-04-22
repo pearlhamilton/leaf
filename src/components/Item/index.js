@@ -14,7 +14,7 @@ const Item = (props) => {
             <h4>£{props.productData.price}</h4>
             <div className="button-container">
             <AddtoCartBtn id={props.productData.id}/>
-            <Link to={`shop/${props.productData.id}`}>
+            <Link to={`products/${props.productData.id}`}>
             <button>View item</button>
             </Link>
             </div>

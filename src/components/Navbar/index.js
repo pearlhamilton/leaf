@@ -8,7 +8,8 @@ const Navbar= () => {
     return(
         <div id="navbar">
             <nav>
-                <NavLink exact to ="/" activeClassName="active">Home</NavLink>
+                <NavLink className="nav-link" exact to ="/" activeClassName="active">Home</NavLink>
+                <NavLink className="nav-link"  exact to ="/products" activeClassName="active">Plants</NavLink>
             </nav>   
             <Basket/>
         </div>

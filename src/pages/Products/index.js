@@ -4,14 +4,14 @@ import { useSelector } from 'react-redux'
 import './style.css'
 
 
-const Shop = () => {
+const Products = () => {
 
     const items = useSelector(state => state.products)
 
     return(
 
         <>
-            <h1>Leaf.</h1>
+            <h1>Plants</h1>
             <div className="shopItems">
                 {items.map(item => <Item key={item.id} productData ={item}/>
                 )}
@@ -21,4 +21,4 @@ const Shop = () => {
 }
 
 
-export default Shop;
+export default Products;
